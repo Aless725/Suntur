@@ -1,11 +1,14 @@
 package com.suntur.model;
 
+/** Usuario del sistema (tabla usuario). Roles: ADMIN y DOCENTE. */
 public class Usuario {
-    int id;
-    String nombres;
-    String apellidos;
-    String correo;
-    String password;
+    private int id;
+    private String nombres;
+    private String apellidos;
+    private String correo;
+    private String password;
+    private String rol;
+    private boolean activo;
 
     public Usuario() {}
 
@@ -19,4 +22,11 @@ public class Usuario {
     public void setCorreo(String correo) { this.correo = correo; }
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
+    public String getRol() { return rol; }
+    public void setRol(String rol) { this.rol = rol; }
+    public boolean isActivo() { return activo; }
+    public void setActivo(boolean activo) { this.activo = activo; }
+
+    public String getNombreCompleto() { return nombres + " " + apellidos; }
+    public boolean isAdmin() { return "ADMIN".equals(rol); }
 }

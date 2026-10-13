@@ -1,0 +1,7 @@
+        </main>
+    </div>
+</div>
+<script src="${ctx}/js/bootstrap.bundle.min.js"></script>
+<script src="${ctx}/js/suntur.js"></script>
+</body>
+</html>
